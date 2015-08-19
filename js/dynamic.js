@@ -192,7 +192,21 @@ $(document).ready(function() {
 		$('.modal, .fade').stop(true,true).fadeOut(200);
 		$.fn.fullpage.setMouseWheelScrolling(true);
 		event.preventDefault();
-	})
+	});
+	$('.quantity .minus').bind('click', function(event) {
+		var $input = $(this).parent().find('h6');
+		var count = parseInt($input.attr('data-val')) - 1;
+		count = count < 1 ? 1 : count;
+		$input.attr('data-val',count);
+		$input.text($input.attr('data-val'));
+		event.preventDefault();
+	});
+	$('.quantity .plus').bind('click', function(event) {
+		var $input = $(this).parent().find('h6');
+		$input.attr('data-val',parseInt($input.attr('data-val')) + 1);
+		$input.text($input.attr('data-val'));
+		event.preventDefault();
+	});
 	$('input, textarea').each(function () {
 		$(this).data('holder',$(this).attr('placeholder'));
 		$(this).focusin(function(){
