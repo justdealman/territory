@@ -168,19 +168,39 @@ header {
 }
 header h3, header h5 {
 	position:absolute;
+	left:40px;
 	top:24px;
 	font-size:16px;
 	line-height:19px;
 	font-weight:normal;
+	text-transform:uppercase;
 	padding:0;
 	margin:0;
 }
-header h3 {
-	left:40px;
-	text-transform:uppercase;
-}
 header h5 {
+	position:absolute;
+	top:20px;
+	left:50%;
+	width:280px;
+	font-size:24px;
+	line-height:27px;
+	font-weight:normal;
+	text-align:center;
+	padding:0;
+	margin:0 0 0 -140px;
+}
+header button {
+	position:absolute;
 	right:40px;
+	top:17px;
+	font-size:16px;
+	line-height:19px;
+	font-weight:bold;
+	font-family:'PT Sans', sans-serif;
+	cursor:pointer;
+	padding:6px 23px 4px 22px;
+	background:transparent;
+	border:2px solid #000000;
 }
 footer {
 	position:fixed;
@@ -205,7 +225,7 @@ footer div p {
 footer h5 {
 	position:absolute;
 	right:40px;
-	bottom:18px;
+	bottom:28px;
 	font-size:14px;
 	line-height:17px;
 	font-weight:normal;
@@ -300,7 +320,7 @@ section > div {
 	margin-left:-480px;
 }
 .benefits h2 {
-	font-size:40px;
+	font-size:44px;
 	line-height:50px;
 	text-transform:uppercase;
 	padding:0;
@@ -361,7 +381,7 @@ section > div {
 	margin-left:-410px;
 }
 .design h2 {
-	font-size:40px;
+	font-size:44px;
 	line-height:50px;
 	text-transform:uppercase;
 	padding:0;
@@ -456,19 +476,22 @@ section > div {
 	z-index:10;
 	width:1253px;
 	text-align:center;
-	margin-left:-627px;
+	margin:-260px 0 0 -627px;
 }
 .carousel h2 {
-	font-size:40px;
+	font-size:44px;
 	line-height:50px;
 	text-transform:uppercase;
 	padding:0;
 	margin:0 0 43px;
 }
+.carousel h2 img {
+	margin:-22px 0 -33px;
+}
 .carousel .jcarousel-container, .carousel .jcarousel-clip {
 	position:relative;
 	width:1253px;
-	height:356px;
+	height:306px;
 }
 .carousel .jcarousel-clip {
 	overflow:hidden;
@@ -476,18 +499,24 @@ section > div {
 .carousel .jcarousel-container .jcarousel-prev, .carousel .jcarousel-container .jcarousel-next {
 	position:absolute;
 	top:50%;
-	width:86px;
-	height:56px;
+	width:47px;
+	height:47px;
 	cursor:pointer;
-	margin-top:-40px;
+	margin-top:-18px;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+	-webkit-box-shadow:0 0 30px rgba(0,0,0,0.8);
+	-moz-box-shadow:0 0 30px rgba(0,0,0,0.8);
+	box-shadow:0 0 30px rgba(0,0,0,0.8);
 }
 .carousel .jcarousel-container .jcarousel-prev {
-	left:-89px;
-	background:url('../img/carousel_arrows.png') no-repeat left top;
+	left:-67px;
+	background:rgba(0,0,0,0.4) url('../img/carousel_arrows.png') no-repeat left top;
 }
 .carousel .jcarousel-container .jcarousel-next {
-	right:-89px;
-	background:url('../img/carousel_arrows.png') no-repeat -86px top;
+	right:-67px;
+	background:rgba(0,0,0,0.4) url('../img/carousel_arrows.png') no-repeat -47px top;
 }
 .carousel .jcarousel-clip ul {
 	margin:0;
@@ -495,7 +524,7 @@ section > div {
 .carousel .jcarousel-item {
 	float:left;
 	width:248px;
-	height:332px;
+	height:282px;
 	padding:12px;
 	margin:0 55px 0 0;
 	background:rgb(162,182,138);
@@ -505,8 +534,8 @@ section > div {
 	margin-right:0;
 }
 .carousel .jcarousel-item > div {
-	height:302px;
-	padding:15px;
+	height:222px;
+	padding:45px 15px 15px;
 	background:#ffffff;
 }
 .carousel .jcarousel-item > div > div {
@@ -545,21 +574,32 @@ section > div {
 	background:transparent;
 	border:2px solid #000000;
 }
+.carousel > button {
+	width:380px;
+	color:#000000;
+	font-size:24px;
+	line-height:28px;
+	font-weight:bold;
+	font-family:'PT Sans', sans-serif;
+	cursor:pointer;
+	padding:20px 20px 18px;
+	margin:62px 0 0;
+	background:#aee066;
+}
 .tip {
 	position:absolute;
 	right:0;
 	top:77%;
 	z-index:200;
-	width:490px;
-	padding:33px 0 37px;
+	width:560px;
+	padding:33px 0 34px;
 	margin-top:-68px;
-	background:#a4b68a url('../img/tip_bg.png') no-repeat 40px center;
+	background:#aee066 url('../img/tip_bg.png') no-repeat 43px center;
 }
 .tip p {
-	color:#ffffff;
-	font-size:18px;
-	line-height:22px;
-	margin:0 20px 0 38px;
+	font-size:20px;
+	line-height:24px;
+	margin:0 36px 0 40px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -648,29 +688,32 @@ section > div {
 	}
 	.carousel {
 		width:810px;
-		margin-left:-405px;
+		margin:-230px 0 0 -405px;
 	}
 	.carousel h2 {
-		margin:0 0 65px;
+		margin:0 0 33px;
+	}
+	.carousel > button {
+		margin:42px 0 0;
 	}
 	.carousel .jcarousel-container, .carousel .jcarousel-clip {
 		width:810px;
-		height:322px;
+		height:262px;
 	}
 	.carousel .jcarousel-item {
 		width:171px;
-		height:298px;
+		height:238px;
 		margin:0 10px 0 0;
 	}
 	.carousel .jcarousel-item > div {
-		height:258px;
+		height:208px;
 		padding:25px 5px 15px;
 		background:#ffffff;
 	}
 	.carousel .jcarousel-item > div > div {
 		width:161px;
 		height:148px;
-		margin:0 0 -2px;
+		margin:0 0 12px;
 	}
 	.carousel .jcarousel-item > div > div img {
 		max-width:161px;
@@ -854,4 +897,70 @@ section > div {
 	font-style:normal;
 	font-family:'Rouble', sans-serif;
 	padding:0 0 0 3px;
+}
+
+.partnership {
+	background:url('../img/benefits_bg.jpg') no-repeat 70% 40%;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+.partnership .content {
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:960px;
+	text-align:center;
+	margin-left:-480px;
+}
+.partnership h2 {
+	font-size:44px;
+	line-height:50px;
+	text-transform:uppercase;
+	padding:0;
+	margin:0 0 25px;
+}
+.partnership ul {
+	text-align:left;
+	padding:56px 0 0;
+	margin:0 0 -56px;
+	background:url('../img/green_square.png') no-repeat center top;
+}
+.partnership ul li {
+	display:inline-block;
+	width:300px;
+	text-align:center;
+	vertical-align:top;
+	margin:0 27px 55px 0;
+}
+.partnership ul li:nth-child(3n) {
+	margin-right:-10px;
+}
+.partnership ul li h5 {
+	font-size:36px;
+	line-height:20px;
+	padding:0;
+	margin:0 0 24px;
+}
+.partnership ul li p {
+	font-size:16px;
+	line-height:24px;
+	font-weight:bold;
+	margin:0 0 24px;
+}
+.partnership button {
+	width:380px;
+	color:#000000;
+	font-size:24px;
+	line-height:28px;
+	font-weight:bold;
+	font-family:'PT Sans', sans-serif;
+	cursor:pointer;
+	padding:20px 20px 18px;
+	margin:0;
+	background:#aee066;
+	-webkit-box-shadow:0 0 15px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 0 15px rgba(0,0,0,0.3);
+	box-shadow:0 0 15px rgba(0,0,0,0.3);
 }

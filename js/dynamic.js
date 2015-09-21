@@ -11,16 +11,14 @@
 	$('.design .content').css({
 		'margin-top': -$('.design .content').outerHeight()/2-18+'px'
 	});
-	$('.carousel').each(function() {
-		$(this).css({
-			'margin-top': '-235px'
-		});
+	$('.partnership .content').css({
+		'margin-top': -$('.partnership .content').outerHeight()/2-18+'px'
 	});
 }
 $(document).ready(function() {
 	var speed = 1000;
 	$('.wrapper').fullpage({
-		anchors: ['welcome', 'benefits', 'design', 'russian', 'nordic', 'monochrome', 'decoration'],
+		anchors: ['welcome', 'benefits', 'design', 'russian', 'nordic', 'monochrome', 'decoration', 'partnership'],
 		menu: '.nav',
 		css3: true,
         sectionSelector: 'section',
