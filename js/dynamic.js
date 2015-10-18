@@ -161,6 +161,22 @@ $(document).ready(function() {
 					'top': '36%'
 				}, speed);
 			}
+            if ( index == 7 && direction == 'down' ) {
+                $('.type4 .photo1').stop().animate({
+					'bottom': '32%'
+				}, speed);
+                $('.type4 .photo2').stop().animate({
+					'top': '-45%'
+				}, speed);
+			}
+            if ( index == 8 && direction == 'up' ) {
+                $('.type4 .photo1').stop().animate({
+					'bottom': '-8%'
+				}, speed);
+                $('.type4 .photo2').stop().animate({
+					'top': '-15%'
+				}, speed);
+			}
         }
 	});
 	inner();
@@ -213,6 +229,11 @@ $(document).ready(function() {
 		$(this).focusout(function(){
 			$(this).attr('placeholder',$(this).data('holder'));
 		});
+	});
+	$('header h3').bind('click', function(event) {
+		$.fn.fullpage.moveTo(2);
+		$.fn.fullpage.moveTo(1);
+		event.preventDefault();
 	});
 });
 $(window).resize(function() {

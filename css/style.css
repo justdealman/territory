@@ -177,6 +177,9 @@ header h3, header h5 {
 	padding:0;
 	margin:0;
 }
+header h3 {
+	cursor:pointer;
+}
 header h5 {
 	position:absolute;
 	top:20px;
@@ -457,7 +460,7 @@ section > div {
 	bottom:-48%;
 	display:block;
 	width:425px;
-	height:386px;
+	height:427px;
 	background:url('../img/photo7.png') no-repeat center center;
 }
 .type4 .photo2 {
@@ -602,7 +605,7 @@ section > div {
 	margin:0 36px 0 40px;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1600px), screen and (max-height: 900px) {
 	.welcome .logo {
 		left:6%;
 	}
@@ -638,7 +641,7 @@ section > div {
 		right:11%;
 	}
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1400px), screen and (max-height: 820px) {
 	.welcome .logo {
 		left:5%;
 		width:271px;
@@ -707,7 +710,7 @@ section > div {
 	}
 	.carousel .jcarousel-item > div {
 		height:208px;
-		padding:25px 5px 15px;
+		padding:25px 5px 5px;
 		background:#ffffff;
 	}
 	.carousel .jcarousel-item > div > div {
@@ -963,4 +966,111 @@ section > div {
 	-webkit-box-shadow:0 0 15px rgba(0,0,0,0.3);
 	-moz-box-shadow:0 0 15px rgba(0,0,0,0.3);
 	box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+@media screen and (max-height: 760px) {
+	.tip {
+		margin-top:-62px;
+	}
+	.tip p {
+		font-size:18px;
+		line-height:22px;
+	}
+	.welcome .phone {
+		left:2%;
+		width:306px;
+		height:327px;
+		background-size:100% 100%;
+	}
+	.welcome .photo1 {
+		right:-5%;
+		width:181px;
+		height:253px;
+		background-size:100% 100%;
+	}
+	.welcome .gloves {
+		width:485px;
+		height:458px;
+		margin:-213px 0 0 -163px;
+		background-size:100% 100%;
+	}
+	.phone {
+		width:378px;
+		height:400px;
+		background-size:100% 100%;
+	}
+	.type1 .phone {
+		left:-10%;
+	}
+	.type1 .photo1 {
+		right:-7%;
+		width:290px;
+		height:314px;
+		background-size:100% 100%;
+	}
+	.type2 .photo1 {
+		left:-8%;
+		width:306px;
+		height:323px;
+		background-size:100% 100%;
+	}
+	.type2 .photo2 {
+		right:1%;
+		width:297px;
+		height:326px;
+		background-size:100% 100%;
+	}
+	.type3 .photo1 {
+		left:-5%;
+		width:290px;
+		height:315px;
+		background-size:100% 100%;
+	}
+	.type3 .photo2 {
+		right:0;
+		width:308px;
+		height:332px;
+		background-size:100% 100%;
+	}
+	.type4 .photo1 {
+		left:-5%;
+		width:326px;
+		height:328px;
+		background-size:100% 100%;
+	}
+	.type4 .photo2 {
+		right:-1%;
+		width:306px;
+		height:330px;
+		background-size:100% 100%;
+	}
+	.benefits .content {
+		-webkit-transform:scale(0.85);
+		-moz-transform:scale(0.85);
+		transform:scale(0.85);
+	}
+	.design .content {
+		-webkit-transform:scale(0.85);
+		-moz-transform:scale(0.85);
+		transform:scale(0.85);
+	}
+	.carousel {
+		-webkit-transform:scale(0.85);
+		-moz-transform:scale(0.85);
+		transform:scale(0.85);
+	}
+	.partnership .content {
+		-webkit-transform:scale(0.85);
+		-moz-transform:scale(0.85);
+		transform:scale(0.85);
+	}
+	.partnership ul {
+		padding:36px 0 20px;
+		margin:-10px 0 10px;
+	}
+	.partnership ul li {
+		margin-bottom:10px;
+	}
+	.partnership button {
+		margin:0 0 -30px;
+	}
 }
