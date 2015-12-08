@@ -272,10 +272,38 @@ section > div {
 	left:40px;
 	top:67px;
 }
-.welcome .logo {
+/*.welcome .logo {
 	position:absolute;
 	left:7%;
 	top:14%;
+}*/
+.welcome .logo {
+	position:absolute;
+	left:0;
+	top:12.6%;
+	z-index:20;
+	width:497px;
+	height:205px;
+	background:url('../img/logo_bg.png') no-repeat left top;
+	-webkit-transform-origin:left top;
+	-moz-transform-origin:left top;
+	transform-origin:left top;
+}
+.welcome .logo img {
+	position:absolute;
+	left:87px;
+	top:49px;
+}
+.welcome .logo h6 {
+	position:absolute;
+	left:104px;
+	top:122px;
+	width:260px;
+	color:#2c251f;
+	font-size:15px;
+	line-height:18px;
+	padding:0;
+	margin:0;
 }
 .welcome .gloves {
 	position:absolute;
@@ -607,7 +635,9 @@ section > div {
 
 @media screen and (max-width: 1600px), screen and (max-height: 900px) {
 	.welcome .logo {
-		left:6%;
+		-webkit-transform:scale(0.9);
+		-moz-transform:scale(0.9);
+		transform:scale(0.9);
 	}
 	.welcome .phone {
 		left:4%;
@@ -643,9 +673,9 @@ section > div {
 }
 @media screen and (max-width: 1400px), screen and (max-height: 820px) {
 	.welcome .logo {
-		left:5%;
-		width:271px;
-		height:64px;
+		-webkit-transform:scale(0.8);
+		-moz-transform:scale(0.8);
+		transform:scale(0.8);
 	}
 	.welcome .phone {
 		left:2%;
